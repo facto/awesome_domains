@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Domains::Application.config.secret_key_base = 'e5b65ab00517d9351b51bd0ece75cc1ac973f9a74bc0997f4fe52e854f6231f9613942071a3d46155cddbdf165990e0a37ae351ca4ca8f54ad0eb56529a4a724'
+Domains::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']

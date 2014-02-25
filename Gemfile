@@ -21,4 +21,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'ruby_gntp'
   gem 'shoulda-matchers'
+  gem 'dotenv-rails'
 end
