@@ -1,0 +1,17 @@
+<h1>My Premium Domains</h1>
+<% if current_user.premium_domains.any? %>
+  <% current_user.premium_domains.each do |premium_domain| %>
+    <li><%= premium_domain.name %></li>
+  <% end %>
+<% else %>
+  None.
+<% end %>
+
+<h1>My Regular Domains</h1>
+<% if current_user.regular_domains.any? %>
+  <% current_user.regular_domains.each do |regular_domain| %>
+    <li><%= regular_domain.name %></li>
+  <% end %>
+<% else %>
+  None.
+<% end %>
