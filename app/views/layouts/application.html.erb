@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <%= link_to 'Account', account_path %>
+  </header>
 
-<%= yield %>
+  <section id="main">
+    <%= yield %>
+  </section>
 
 </body>
 </html>
